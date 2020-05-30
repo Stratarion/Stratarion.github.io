@@ -1,0 +1,732 @@
+@font-face{
+font-family: 'MyWebFont';
+src: url('../fonts/WebFont.eot');
+src: url('../fonts/WebFont.eot?iefix') format('eot'),
+url('../fonts/WebFont.woff') format('woff'),
+url('../fonts/WebFont.ttf') format('truetype'),
+url('../fonts/WebFont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    background-image: url('https://static.tildacdn.com/tild6436-3737-4063-a637-613231363235/ae175e77e10df353258b.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height: 600px;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+section {
+    padding: 0px 4.2vw;
+}
+
+h1 {
+    
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3.2vw;
+    margin: 0;
+
+}
+h3 {
+    margin: 0;
+    
+}
+h4 {
+    
+}
+h5 {
+    
+}
+h6 {
+    
+}
+p {
+    font-size: 1.4vw;
+}
+
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+input {
+    
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+ul {
+margin-left: 0; /* Отступ слева в браузере IE и Opera */
+padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+margin-top: auto;
+}
+
+.line {
+    display: inline-block;
+    height: 1px;
+    width: 73%;
+    margin-bottom: 3vw;
+    &-light {
+        background-color: #fff;
+    }
+    &-dark {
+        background-color: #000;        
+    }
+    &-red {
+        background-color: #ff0000; 
+        margin-top: 2vw;
+    }
+}
+
+
+
+
+// Навигация
+.top {
+    background-color: rgba(2, 2, 69, 0.2);
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.3vw 0 1vw 0;
+    z-index: 99;
+    &-left {
+        &-logo {
+            img {
+                width: 12vw;
+            }
+        }
+    }
+    &-right {
+        &-menu {
+            display: inline-block;
+            &-item {
+                display: inline;
+                margin-right: 2vw;
+                font-size: 1.2vw;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.7s;
+                    &:hover {
+                        color: #f7c02a;
+                        text-decoration: none;
+                    } 
+                 }
+            }
+        }
+        &-btn {
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: none;
+            background: none;
+            padding: 0.45vw 1.6vw;
+            font-weight: bold;
+            border-radius: 0px;
+            &:hover {
+                border-color: #000;
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+
+// 1-ый экран
+.main {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,1));
+    background-position: center;
+    transform:translate3d(0,0,0);
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding-top: 9vw;
+    padding-bottom: 5vw;
+    color: #fff;
+    &-redTxt {
+        color: #ff0000;
+        font-weight: 600;
+        font-size: 2.8vw;
+    }
+    &-btn {
+        color: red;
+        border: 2px solid red;
+        border-radius: 0px;
+        background: none;
+        padding: 0.8vw 1vw;
+        font-weight: 600;
+        font-size: 1.6vw;
+        transition: 2s;
+        box-shadow: 0px 0px 30px 0px rgba(255,255,255,1), 0px 0px 30px 0px rgba(255,255,255,1);
+        display: table-cell;
+        margin-top: 0.5vw;
+        text-shadow: 1px -1px 1px rgba(255,255,255,0.5);
+        &:hover {
+            border-color: #fff;
+            color: #fff;
+            box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
+
+        }
+    }
+
+}
+
+// счетчик времени 1ый, на тёмном фоне
+.time_black {
+    background: #000;
+    padding: 2vw 0;
+    &-info {
+        color: #fff;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    &-time {
+        color: red;
+        font-size: 3.6vw;
+        font-weight: 600;
+    }
+}
+// секция "кому это нужно"
+.whoitneed {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(156,154,154,1)) );
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(156,154,154,1));
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(156,154,154,1));
+    color: #fff;
+    &-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-box {
+        display: inline-block;
+        margin-top: 4.8vw;
+        &-img {
+            background: rgb(233, 233, 233);
+            display: inline-block;
+            border-radius: 100px;
+        }
+        &-header {
+            font-weight: 600;
+            font-size: 2vw;
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+        }
+        &-txt {
+            font-size: 1vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+}
+
+// секция "а что там будет"
+.whatit {
+    position: relative;
+    &-first {
+        background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(156,154,154,1)), to(rgba(255,255,255,0.9)) );
+        background-image: -webkit-linear-gradient(top, rgba(156,154,154,1), rgba(255,255,255,0.9));
+        background-image: linear-gradient(to bottom, rgba(156,154,154,1), rgba(255,255,255,0.9));
+        margin-bottom: 1px;
+        h2 {
+            font-size: 3vw;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    }
+    &-second {
+        background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(255,255,255,0.9)), to(rgba(255,255,255,1)) );
+        background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,1));
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,1));
+    }
+    &-container {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1.5vw;
+        vertical-align: top;
+        &-left {
+            width: 22%;
+            display: inline-block;
+            height: 100%;
+            position: relative;
+            &_picture {
+                width: 16vw;
+                margin-bottom: 3vw;
+            }
+  
+        }
+        &-right {
+            width: 68%;
+            display: inline-block;
+            text-align: left;
+            height: 100%;
+            &_okey {
+                position: absolute;
+                top: 0;
+                left: 19vw;
+                width: 6vw;
+            }
+            ol {
+                padding-left: 1.05vw;
+                margin-top: 1.5vw;
+                li {
+                list-style-type: decimal;
+                margin-left: 0;
+                font-size: 1.4vw;
+                font-weight: normal;
+                margin-bottom: 0.5vw;
+                }
+            }
+            h3 {
+                font-weight: 900;
+                margin-top: 0.5vw;
+                font-size: 2vw;
+            }
+            &_lesson {
+                font-weight: 600;
+                font-size: 1.3vw;
+                letter-spacing: 0.2vw;
+            }
+            &_about {
+                font-style: italic;
+                font-weight: 900;
+                font-size: 1.25vw;
+            }
+        }
+        &-bottom {
+            color: red;
+            font-size: 1.8vw;
+            font-weight: 900;
+            text-align: left;
+            margin-left: 20vw;
+            padding-bottom: 2vw;
+
+        }
+    }
+    &-btn {
+        border-radius: 0px;
+        background: none;
+        border: 2px solid #000;
+        font-size: 1.65vw;
+        font-weight: 900;
+        margin-bottom: 4vw;
+        margin-top: 2vw;
+        padding: 0.8vw 1vw;
+        box-shadow: 0px 0px 20px 0px rgba(156, 112, 112, 0.3), 0px 0px 20px 0px rgba(153,0,0,0.3);
+        transition: 2s;
+        &:hover {
+            color: #00ff00;
+            border-color: #1bf71b;
+            box-shadow: 0px 0px 20px 0px rgba(156, 112, 112, 0.3);
+
+        }
+    }
+    
+}
+
+// счетчик времени 1ый, на тёмном фоне
+.time_light {
+    background: #fff;
+    padding: 2vw 0;
+    &-info {
+        color: #000;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    &-time {
+        color: red;
+        font-size: 3.6vw;
+        font-weight: 600;
+    }
+}
+
+.whatYouGet {
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(255,0,0,0.6)), to(rgba(247,0,0,0.8)) );
+    background-image: -webkit-linear-gradient(top, rgba(255,0,0,0.6), rgba(247,0,0,0.8));
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0.6), rgba(247,0,0,0.8));
+    color: #fff;
+    padding: 4vw;
+    text-align: center;
+    h2 {
+        margin-bottom: 3vw;
+        font-size: 3vw;
+        text-transform: uppercase;
+    }
+    &-box {
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        width: 50vw;
+        border: 1px solid #fff;
+        box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
+        padding: 1vw 2.5vw;
+        &::before {
+            content: "";
+            display: block;
+            border: 1px solid #fff;
+            width: 98%;
+            // height: 53.6vw;
+            min-height: 98%;
+            position: absolute;
+            top: 0.5vw;
+            left: 0.5vw;
+        }
+        &_list {
+            font-size: 1.7vw;
+            font-weight: normal;
+            li {
+                margin-top: 1.3vw;
+                margin-left: 2vw;
+                margin-bottom: 2vw;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 1.8vw;
+                    height: 1.8vw;
+                    background: #fff;
+                    display: inline-block;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 0.6vw;
+                    left: -2.5vw;
+
+                    // margin-right: 1vw;
+                    // margin-top: 0.5vw;
+
+                }
+
+            }
+            
+
+        }
+        &_list2 {
+            font-size: 1.7vw;
+            margin-left: 2vw;
+            li {
+                margin-bottom: 0.6vw;
+            }
+        }
+        span {
+            font-style: italic;
+            font-size: 1.8vw;
+            font-weight: 900;
+            display: inline-block;
+            margin-bottom: 2vw;
+            margin-top: 2vw;
+        }
+    }
+    &-btn {
+        display: inline-block;
+        margin-top: 2vw;
+        border-radius: 0px;
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 0.6vw 0.45vw;
+        font-weight: 600;
+        font-size: 1.6vw;
+        box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
+        transition: 2s;
+        &:hover {
+            color: #00ff00;
+            border-color: #1bf71b;
+            box-shadow: 0px 0px 20px 0px rgba(156, 112, 112, 0.3);
+
+        }
+    }
+}
+
+.believeUs {
+    padding: 5vw 22vw 3vw 22vw;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0.9)) );
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0.9));
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.9));
+    h2 {
+        color: #ff0000;
+        font-size: 3vw;
+    }
+    p {
+        color: #000;
+        margin-top: 3vw;
+    }
+    img {
+        width: 30vw;
+    }
+}
+
+.toresults {
+    background: #fff;
+    padding: 5vw;
+    text-align: left;
+    &-box {
+        margin-left: 15vw;
+        color: #ff0000;
+        p {
+            font-size: 1.8vw;
+            font-weight: 900; 
+        }
+    }
+    img {
+        width: 5vw;
+    }
+}
+
+.fast {
+    background: #000;
+    padding: 5vw 0;
+    &_line {
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+        top: 7vw;
+        left: 0;
+        z-index: 99;
+
+        background-color: #fff;
+        position: absolute;
+    }
+    h2 {
+        color: #fff;
+        margin: 0;
+        span {
+            color: red;
+        }
+    }
+    &-btn {
+        background: none;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 0.8vw 2.9vw;
+        font-size: 1.5vw;
+        font-weight: 900;
+        box-shadow: 0px 0px 30px 0px rgba(255,255,255,1), 0px 0px 30px 0px rgba(255,255,255,1);
+        border-radius: 0px;
+        transition: 2s;
+        &:hover {
+            color: #1bf71b;
+            border-color: #1bf71b;
+            box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
+
+        }
+    }
+    &-container {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        h3 {
+            font-weight: 900;
+        }
+        p {
+            font-size: 1.2vw;
+        }
+        &_left {
+          display: inline-block;
+          width: 34%;
+          text-align: right;
+          &_box {
+            position: relative;
+            padding: 5vw 5vw 3.6vw 5vw;
+            margin-top: 8vw;
+
+            }
+        }
+        &_right {
+          display: inline-block;
+          width: 34%;
+          text-align: left;  
+
+          &_box {
+            position: relative;
+            padding: 5.2vw;  
+          }      
+          &_margin {
+              margin-top: 1vw;
+          }  
+        }
+        &_mid {
+            display: flex;
+            flex-direction: column;
+            &_num {
+                border-radius: 30px;
+                background-color: #fff;
+                display: inline-block;
+                height:3.5vw;
+                width:3.5vw;
+                color: #ff0000;
+                text-align: center;
+                z-index: 100;
+                p {
+                font-size: 1.7vw;
+                font-weight: 900;
+                margin: 0.7vw 0 0 0;
+                }
+            }
+        }
+    }
+}
+.first {
+    position: absolute;
+    left: -1.75vw;
+}
+.second {
+    position: absolute;
+    right: -1.75vw;
+}
+.third {
+    position: absolute;
+    left: -1.75vw;
+}
+
+.aboutAuthor {
+    background-color: #fff;
+    padding: 5vw 0 0 0;
+    h2 {
+        text-transform: uppercase;
+    }
+    &-container {
+        margin-top: 3vw;
+        display: flex;
+        justify-content: space-around;
+        &-photo {
+            vertical-align: top;
+            width: 30%;
+            display: inline-block;
+            position: relative;
+            &_main {
+                z-index: 10;
+                position: relative;
+                width: 18vw;
+
+            }
+            &_effect {
+                transform: rotate(2deg);
+                position: absolute;
+                top: -0.5vw;
+                left: -0.5vw;
+                box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+                border: 1px solid #000;
+                z-index: 9;
+                width: 18.5vw;
+                
+
+            }
+            img {
+                margin-top: 3vw;
+                margin-left: 15vw;
+                box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+                border: 1px solid #000;
+            }
+        }
+        &-content {
+            width: 60%;
+            display: inline-block; 
+            span {
+                display: block;
+                margin-bottom: 3vw;
+                font-size: 1vw;
+                opacity: 0.6;
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 2px;
+                    width: 6%;
+                    display: block;
+                    background-color: #000;
+                    position: absolute;
+                    // top: 0;
+                    bottom: -1vw;
+                    left: 47%;
+                    opacity: 0.8;
+
+                }
+            } 
+            h3 {
+                margin-bottom: 1vw;
+                font-size: 2.7vw;
+                font-weight: 900;
+                }  
+            p {
+                font-size: 1.1vw;
+            }
+        }
+    }
+}
+
+.red-text {
+    color: red;
+}
+
+.invitation {
+    background-color: #fff;
+    margin: 0;
+    padding: 2vw 0 4vw 0;
+    p {
+        margin: 0;
+        margin-top: 1vw;
+        line-height: 2vw;
+    }
+    h2 {
+        text-transform: uppercase;
+    }
+    &-btn {
+        margin-top: 4vw;
+        background: none;
+        border: 2px solid red;
+        border-radius: 0px;
+        font-size: 1.6vw;
+        font-weight: 900;
+        box-shadow: 0px 0px 20px 0px rgba(153,0,0,0.3), 0px 0px 20px 0px rgba(153,0,0,0.3);
+        padding: 0.6vw 1vw;
+        transition: 1.8s;
+        &:hover {
+            color: #1bf71b;;
+            border-color: #1bf71b;;
+            box-shadow: 0px 0px 20px 0px rgba(153,0,0,0.3);
+        }
+    }
+}
+
+
+.time_last {
+    background: #fff;
+    padding: 2vw 0;
+    &-info {
+        font-size: 2vw;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 1vw;
+    }
+    &-time {
+        color: red;
+        font-size: 3.6vw;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+

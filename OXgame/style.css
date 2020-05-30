@@ -1,0 +1,43 @@
+.gameWrap {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.batleground-cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 5px;
+}
+.batleground-cell:hover {
+    cursor: pointer;
+    background: #5e5e5e;
+}
+.batleground-cell-win {
+    background: green;
+    border-color:green
+}
+
+.Oplayer {
+    background-image: url(Oplayer.png);
+    background-size: cover;
+}
+
+.Xplayer {
+    background-image: url(Xplayer.png);
+    background-size: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid black;
+    margin-top: 30px;
+    
+}
+.btn:hover {
+    background: #5e5e5e;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+@media screen and (max-width: 1440px) {
+
+    _:-ms-fullscreen, :root .screen-1 .screen-left .screen-1-woman{
+        right: -25px;
+    }
+
+    .container{
+        max-width: 1200px;
+    }
+
+    a.logo{
+        max-width: 309px;
+    }
+
+    .credit-info .credit-info-main h3{
+        font-size: 79px;
+        line-height: 81px;
+    }
+
+    .credit-info p{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .credit-info{
+        margin-top: 60px;
+    }
+
+    .callback{
+        margin-bottom: 28px;
+    }
+
+    .callback a{
+        font-size: 30px;
+    }
+
+    .callback p{
+        font-size: 16px;
+    }
+
+    .screen-1{
+        min-height: 662px;
+    }
+
+    .screen-1 .screen-left .screen-1-woman{
+        max-width: 320px;
+        bottom: 100px;
+        right: -55px;
+    }

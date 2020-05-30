@@ -1,0 +1,337 @@
+@media (max-width: 1199px) {
+  .top-images-glass {
+    height: 220px;
+  }
+  .top-images-dino {
+    height: 350px;
+  }
+  .compatibility-glass {
+    overflow: hidden;
+  }
+}
+@media (max-width: 1050px) {
+  .orderssecond {
+    display: none;
+  }
+  .games-img {
+    display: block;
+    width: 100%;
+  }
+  .games-img-x {
+    top: 0;
+    left: 50%;
+    margin-left: 0vw;
+    width: 45vw;
+  }
+  .games-img-simple {
+    top: 0;
+    left: 50%;
+    margin-left: 0vw;
+    width: 45vw;
+  }
+  .games-text {
+    display: none;
+  }
+  .games-sm-screen {
+    display: block;
+    max-width: 100%;
+    text-align: justify;
+  }
+}
+@media (max-width: 992px) {
+  .orders-content span:before {
+    display: none;
+  }
+  .games-img {
+    display: block;
+    width: 100%;
+  }
+  .games-img-x {
+    top: 0;
+    left: 50%;
+    margin-left: -27vw;
+    width: 45vw;
+  }
+  .games-img-simple {
+    top: 0;
+    left: 50%;
+    margin-left: -27vw;
+    width: 45vw;
+  }
+  .games-text {
+    display: none;
+  }
+  .games-sm-screen {
+    display: block;
+    width: 100%;
+    text-align: justify;
+  }
+}
+@media (max-width: 774px) {
+  .object {
+    display: none;
+    width: 0px;
+  }
+  .header-content-main {
+    margin-left: 10px;
+  }
+  .top {
+    padding: 20px;
+  }
+  .top-images-dino {
+    height: 250px;
+  }
+  .orders-content span:before {
+    content: '';
+    border: 48px solid transparent;
+    border-left: 30px solid #4bf;
+    position: absolute;
+    right: -78px;
+    bottom: 0px;
+  }
+  .orders {
+    overflow: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .games {
+    padding: 5vw 2vw;
+  }
+  .games-img {
+    display: block;
+    width: 100%;
+  }
+  .games-img-x {
+    top: 0;
+    left: 50%;
+    margin-left: -45vw;
+    width: 80vw;
+  }
+  .games-img-simple {
+    top: 0;
+    left: 50%;
+    margin-left: -45vw;
+    width: 80vw;
+  }
+  .games-text {
+    display: none;
+  }
+  .games-sm-screen {
+    display: block;
+    max-width: 100%;
+    text-align: justify;
+  }
+}
+@media (max-width: 450px) {
+  .compatibility-xs {
+    display: block;
+    margin-top: 20px;
+    vertical-align: bottom;
+  }
+  .compatibility-glass img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .compatibility-lg {
+    display: none;
+  }
+  .compatibility-phones img {
+    width: 100%;
+  }
+  .top {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .top-images-dino {
+    right: -100px;
+    height: 200px;
+  }
+  .top-images-glass {
+    height: 150px;
+  }
+  .top-content h3 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .top-content {
+    margin-top: 150px;
+  }
+  .top-content .btn {
+    margin-bottom: 190px;
+  }
+  .header-content-main {
+    margin: 10px 0 0 10px;
+  }
+  .header-content-vrII {
+    margin-top: 28px;
+    font-size: 12px;
+  }
+  .header-content_img {
+    width: 55px;
+    margin-left: 10px;
+  }
+  .header-content-right {
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .whatis {
+    border: none;
+  }
+  .whatis-content {
+    margin-bottom: 0;
+  }
+  .whatis-content button {
+    font-size: 10px;
+    padding: 15px 20px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .opportunities-img-xs {
+    display: block;
+  }
+  .opportunities-img-glass {
+    width: 320px;
+  }
+  .opportunities-img-lg {
+    display: none;
+  }
+  .object {
+    display: none;
+  }
+  .opportunities-text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .opportunities-text h3 img {
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .form-xs {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .orders h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .orders span {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .orders-content-txt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    font-size: 6px;
+    margin-bottom: 20px;
+  }
+  .form-lg {
+    display: none;
+  }
+  .games-img {
+    display: block;
+    width: 100%;
+  }
+  .games-img-x {
+    top: 0;
+    left: 50%;
+    margin-left: -45vw;
+    width: 80vw;
+  }
+  .games-img-simple {
+    top: 0;
+    left: 50%;
+    margin-left: -45vw;
+    width: 80vw;
+  }
+  .games-text {
+    display: none;
+  }
+  .games-sm-screen {
+    display: block;
+    max-width: 100%;
+    text-align: justify;
+  }
+  .underground-content-main {
+    margin: 10px 0 0 10px;
+  }
+  .underground-content-vrII {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  .underground-content_img {
+    width: 55px;
+    margin-left: 10px;
+  }
+  .underground-content-right {
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 360px) {
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  .top-content h3 {
+    font-size: 14px;
+  }
+  .top-content {
+    margin-top: 120px;
+  }
+  .top-content .btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .top-images-dino {
+    height: 180px;
+  }
+  .top-images-glass {
+    height: 100px;
+  }
+  .header-content-vrII {
+    margin-top: 22px;
+  }
+  .underground-content-main {
+    margin: 10px 0 0 10px;
+  }
+  .underground-content-vrII {
+    margin-top: 22px;
+    font-size: 12px;
+  }
+  .underground-content_img {
+    width: 55px;
+    margin-left: 10px;
+  }
+  .underground-content-right {
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}

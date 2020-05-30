@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Тестовое задание</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="container top">
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu">MENU</label>
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+            <div class="logo">
+                    <img src="img/logo.svg" alt="">
+            </div>
+            
+            <div class="top-menu">
+                <ul class="top-menu-nav nav">
+                    <li class="nav-item"><a class="nav-link" href="#">О КОМПАНИИ</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">НЕДВИЖИМОСТЬ</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">УСЛУГИ</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ИНФО</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">НОВОСТИ</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a> </li>
+                </ul>
+                <button class="fidback">ЗАЯВКА</button>
+                <a href="#" class="phone-num">+49 30 889 203 99</a>
+                <div class="dropdown top-menu-lang">
+                    <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/Rectangle 43.png" alt="#">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="img/Rectangle 43.png" alt="#"></a>
+                        <a class="dropdown-item" href="#"><img src="img/Rectangle 43.png" alt="#"></a>
+                        <a class="dropdown-item" href="#"><img src="img/Rectangle 43.png" alt="#"></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section class="first-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <h1>НЕДВИЖИМОСТЬ В ГЕРМАНИИ</h1>
+                    <div class="row first-screen-nav">
+                        <div class="first-screen-nav-item col-lg-4 col-md-6">
+                            <a href="#">Квартиры и дома</a><br>   
+                            <a href="#">Доходные квартиры</a>
+                        </div>
+                        <div class="first-screen-nav-item col-lg-4 col-md-6">
+                            <a href="#">Новостройки</a><br>   
+                            <a href="#">Земельные участки</a></div>
+                        <div class="col-lg-4 col-md-6 first-screen-nav-item ">
+                            <a href="#">Коммерческая недвижимость</a><br>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filtres">
+        <div class="container">
+            <form action="submit">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <h3>Расположение</h3>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                Регион
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Город
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Район
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h3>Недвижимость</h3>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                Выбрать недвижимость
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else here</button>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Тип недвижимости
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Вид недвижимости
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h3>Цена</h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Минимальная цена
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="ID">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Максимальная цена
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-search">Поиск</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="second-screen">
+        <div class="main container">
+            <h2>Жилая, элитная и доходная недвижимость в Германии</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/category1.png" alt="#">
+                    <h3>Квартиры</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo.png" alt="#">
+                    <h3>Дома</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo-1.png" alt="#">
+                    <h3>Новостройки</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo-2.png" alt="#">
+                    <h3>Коммерческая недвижимость</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo-3.png" alt="#">
+                    <h3>Доходные квартиры</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo-4.png" alt="#">
+                    <h3>Доходные дома</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo-5.png" alt="#">
+                    <h3>Земельные участки</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 category">
+                    <img src="img/photo-6.png" alt="#">
+                    <h3>Инвест-проекты</h3>
+                    <button type="button" class="btn btn-warning">320</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="howbuy">
+        <div class="container">
+            <h2>Как купить недвижимость в германии</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="howbuy-slide carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3 offset-md-1 col-sm-12">
+                                    <img src="img/icon.svg"  alt="#">
+                                    <a class="howbuy-slide-readmore" href="#">Прочитать об этапах покупки подробнее</a>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="howbuy-slide-description">
+                                        <span>01</span>
+                                        <h5>Подписание договора о поиске объекта</h5>
+                                        <p>Принимая решение купить доходную недвижимость в Европе, 
+                                            многие профессиональные инвесторы отдают предпочтение Германии. 
+                                            И в этом нет ничего удивительного. Доступные цены, надежность 
+                                            экономики и стабильность политической ситуации в стране формируют
+                                            благоприятный инвестиционный климат с возможностью просчитать 
+                                            развитие рынка в долгосрочной перспективе.</p>
+                                    </div>
+                                    <ol class="howbuy-slide-list">
+                                        <li value="02">Выбор объекта</li>
+                                        <li>Бронирование объекта и договор об оказании риэлторских услуг</li>
+                                        <li>Предварительный договор купли-продажи</li>
+                                        <li>Проверка объекта</li>
+                                        <li>Подписание договора купли-продажи</li>
+                                        <li>Оплата стоимости объекта</li>
+                                        <li>Переход права собственности и регистрация нового собственника</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="howbuy-slide carousel-item">
+                                <div class="row">
+                                        <div class="col-md-3 offset-md-1 col-sm-12">
+                                            <img src="img/icon.svg"  alt="#">
+                                            <a class="howbuy-slide-readmore" href="#">Прочитать об этапах покупки подробнее</a>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="howbuy-slide-description">
+                                                <span>01</span>
+                                                <h5>Подписание договора о поиске объекта</h5>
+                                                <p>Принимая решение купить доходную недвижимость в Европе, 
+                                                    многие профессиональные инвесторы отдают предпочтение Германии. 
+                                                    И в этом нет ничего удивительного. Доступные цены, надежность 
+                                                    экономики и стабильность политической ситуации в стране формируют
+                                                    благоприятный инвестиционный климат с возможностью просчитать 
+                                                    развитие рынка в долгосрочной перспективе.</p>
+                                            </div>
+                                            <ol class="howbuy-slide-list">
+                                                <li value="02">Выбор объекта</li>
+                                                <li>Бронирование объекта и договор об оказании риэлторских услуг</li>
+                                                <li>Предварительный договор купли-продажи</li>
+                                                <li>Проверка объекта</li>
+                                                <li>Подписание договора купли-продажи</li>
+                                                <li>Оплата стоимости объекта</li>
+                                                <li>Переход права собственности и регистрация нового собственника</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="howbuy-slide carousel-item">
+                                <div class="row">
+                                        <div class="col-md-3 offset-md-1 col-sm-12">
+                                            <img src="img/icon.svg"  alt="#">
+                                            <a class="howbuy-slide-readmore" href="#">Прочитать об этапах покупки подробнее</a>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="howbuy-slide-description">
+                                                <span>01</span>
+                                                <h5>Подписание договора о поиске объекта</h5>
+                                                <p>Принимая решение купить доходную недвижимость в Европе, 
+                                                    многие профессиональные инвесторы отдают предпочтение Германии. 
+                                                    И в этом нет ничего удивительного. Доступные цены, надежность 
+                                                    экономики и стабильность политической ситуации в стране формируют
+                                                    благоприятный инвестиционный климат с возможностью просчитать 
+                                                    развитие рынка в долгосрочной перспективе.</p>
+                                            </div>
+                                            <ol class="howbuy-slide-list">
+                                                <li value="02">Выбор объекта</li>
+                                                <li>Бронирование объекта и договор об оказании риэлторских услуг</li>
+                                                <li>Предварительный договор купли-продажи</li>
+                                                <li>Проверка объекта</li>
+                                                <li>Подписание договора купли-продажи</li>
+                                                <li>Оплата стоимости объекта</li>
+                                                <li>Переход права собственности и регистрация нового собственника</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <form action="submit" class="fidback">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 fidback-column">
+                        <h3>Не нашли, что искали? Нужна консультация? Оставьте номер своего телефона и мы вам перезвоним.</h3>
+                        <p>Нажимая "Отправить" вы соглашаетесь с правилами обработки персональных данных и <a href="#">политикой конфиденциальности</a> EW Real Estate</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 fidback-column">
+                            <input type="text" placeholder="Как к вам обращаться">
+                            <input type="text" placeholder="Ваш номер телефона">
+                    </div>
+                    <div class="col-lg-2 col-md-12 fidback-column">
+                        <div class="fidback-btn-empty"></div>
+                        <button type="button" class="btn fidback-btn">Отправить</button>
+                    </div>
+                </div>
+            </form>
+            <div class="main">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 main-info">
+                        <div class="main-info-logo logo">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                        <h5 class="main-info-address">Kurfürstendamm 45 Berlin 10719</h5>
+                        <h3 class="main-info-number">+49 30 889-203-99 <br> +49 178 519-87-28</h3>
+                        <p>info@ew-realestate.de </p>
+                        <p>skype: east-westrealestate </p>
+                        <p>Игорь Зиберт</p>
+                        <div class="main-info-socials">
+                            <a href="#"><img src="img/f.svg" alt=""></a>
+                            <a href="#"><img src="img/t.svg" alt=""></a>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12 main-nav">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 main-nav-column">
+                                <h3>НАВИГАЦИЯ</h3>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Главная</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">О компании</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Информация</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Заявка online</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 main-nav-column">
+                                <h3>УСЛУГИ</h3>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Индивидуальный поиск и продажа недвижимости </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Послепродажное обслуживание </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Открытие счета в банке </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ипотечный кредит</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 main-offers">
+                        <h3>НЕДВИЖИМОСТЬ</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Квартиры </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Дома и виллы </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Доходные квартиры </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Доходные дома</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Коммерческая недвижимость </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Новостройки </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Земля</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Инвестиции</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
