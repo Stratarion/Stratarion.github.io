@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Monumentregular';
+    src: url(./fonts/MonumentExtended-Regular.otf);
+}
+@font-face {
+    font-family: 'Monumentextrabold';
+    src: url(./fonts/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplayLight';
+    src: url(./fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplayMediu';
+    src: url(./fonts/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: 'NeueHaasDisplayRoman';
+    src: url(./fonts/NeueHaasDisplayRoman.ttf);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.firstscreen-info, .style {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h2, h1 {
+    font-family: 'Monumentregular';
+}
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+}
+h1 {
+    font-size: 112px;
+    font-weight: 400;
+    line-height: 134px;
+    letter-spacing: 0em;
+    text-align: right;
+    width: 554px;
+    word-wrap: break-word;
+    color: #000000;
+    
+}
+
+a, p {
+    font-family: "NeueHaasDisplayRoman";
+}
+
+.firstscreen {
+    animation-duration: 4s;
+    animation-name: opacityzeromax;
+    overflow: hidden;
+}
+
+
+.firstscreen-info {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.firstscreen .carousel-item {
+    max-height: 100vh;
+}
+
+.firstscreen-info-left {
+    display: flex;
+    gap: 50px;
+    padding-left: 100px;
+}
+
+.firstscreen-logo {
+    animation-name: swipeleft;
+    animation-duration: 3s;
+    position: absolute;
+    left: 111px;
+}
+
+.firstscreen-logo img {
+    width: 48px;
+}
+
+.firstscreen-menu ul {
+    list-style: none;
+}
+
+.firstscreen-menu ul li {
+    margin-bottom: 20px;
+
+}
+
+.firstscreen .carousel-control-next, .firstscreen .carousel-control-prev {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.firstscreen .carousel-control-next img, .firstscreen .carousel-control-prev img {
+    
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.firstscreen .carousel-control-next img:hover, .firstscreen .carousel-control-prev img:hover {
+    filter: grayscale(0%);
+}
+
+.firstscreen .carousel-control-next, .firstscreen .carousel-control-prev  {
+    position: static;
+}
+.carousel-control-next:focus, .carousel-control-prev:focus {
+    opacity: 0.5;
+}
+
+.buttons-layout {
+    bottom: 50px;
+    position: absolute;
+    right: 5%;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+    animation-name: swipebottom;
+    animation-duration: 3s;
+
+}
+
+.firstscreen-menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+
+.style {
+    padding-top: 120px;
+    padding-bottom: 100px; 
+    /* у следующей секции должен быть верхни отступ 100 */
+}
+
+.style h2 {
+    display: none;
+}
+
+.style-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 216px;
+    margin-top: 80px;
+    justify-content: space-between;
+
+}
+
+.style-item {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.style-item-honest {
+    align-items: flex-end;
+}
+
+.style-item-honest .style-image-description {
+    text-align: right;
+}
+
+.style-text-main {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    
+    transform: matrix(0.99, 0.16, 0.22, 0.98, 0, 0);
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.style-text-main_display {
+    transform: none;
+    opacity: 1;
+}
+
+.style-image-description {
+    font-family: "NeueHaasDisplayLight";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #999999;
+    margin-top: 10px;
+}
+
+.style-image {
+    opacity: 0;
+}
+.style-image img {
+    filter: grayscale(100%);
+    transition-duration: 2s;
+}
+
+.style-image img:hover {
+    filter: grayscale(0%);
+
+}
+
+.swipetop {
+    animation-name: swipetop;
+    animation-duration: 2s;
+    display: block !important;
+
+}
+
+.swipeleft {
+    animation-name: swipeleft;
+    animation-duration: 1s;
+    display: block !important;
+}
+
+
+.swipeleft {
+    animation-name: swipeleft;
+    animation-duration: 1s;
+    display: block !important;
+}
+
+.swipebottom {
+    animation-name: swipebottom;
+    animation-duration: 1s;
+    display: block !important;
+}
+
+.opacityzeromax {
+    animation-duration: 3s;
+    animation-name: opacityzeromax;
+    opacity: 1;
+    
+}
+
+@keyframes swipetop {
+    from {
+        margin-top: -500px;
+    }
+    75% {
+        margin-top: -500px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+@keyframes swipebottom {
+    from {
+        margin-bottom: -500px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-bottom: -500px;
+    }
+    
+    80% {
+        opacity: 0;
+        margin-bottom: -100px;
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+    
+}
+
+@keyframes swipeleft {
+    from {
+        margin-left: -500px;
+    }
+    75% {
+        margin-left: -500px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+
+
+@keyframes opacityzeromax {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
