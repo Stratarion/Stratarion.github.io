@@ -123,16 +123,129 @@
     </section>
     <section>
         <div class="stages">
+            <h2>Stages<br>
+                of development</h2>
             <div class="stages-slider">
                 <div class="stages-slider-item">
-                    <p class="stages-slider-year"></p>
+                    <p class="stages-slider-year">1954</p>
                     <div class="stages-slider-card">
+                        <div>
+                            <h4>Nikita Khrushchev's<br>Speech</h4>
+                            <p>
+                                It all began on December 7, 1954 with a speech by Nikita Khrushchev 
+                                «On the widespread introduction of industrial methods, improving quality 
+                                and reducing construction costs», in which he harshly criticized the richly 
+                                decorated Stalinist architecture.
+                            </p>
+                        </div>
+                        <img src="./img/stages1.png" alt="">
                         
                     </div>
                 </div>
-                <div class="stages-slider-item"></div>
-                <div class="stages-slider-item"></div>
-                <div class="stages-slider-item"></div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1955</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>government <br>
+                                decree</h4>
+                            <p>
+                                On November 4, 1955, the decree «On the Elimination of Superfluous Design 
+                                and Construction» was issued. The new buildings were expected to be primarily 
+                                functional and practical. Decorative elements were forbidden in any form.
+                            </p>
+                        </div>
+                        <img src="./img/stages2.png" alt="">
+                    </div>
+                </div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1955 — 1968</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>Television Tower <br>
+                                in Ostankino</h4>
+                            <p>
+                                On July 15, 1955, the Council of Ministers of the USSR issued a decree «On the 
+                                construction of a new television broadcasting center». Construction began in the 
+                                summer of 1960, even before the final approval of the project. 
+                            </p>
+                        </div>
+                        <img src="./img/stages3.png" alt="">
+                    </div>
+                </div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1970 — 1977</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>Russian state news<br> agency (TASS)</h4>
+                            <p>
+                                The main peculiarity of the facades are the two-storey window screens, whose 
+                                unusual shape prevented the building from falling out of the square's ensemble, 
+                                giving the 9-storey building the appearance of a 4-storey structure.  
+                            </p>
+                        </div>
+                        <img src="./img/stage4.png" alt="">
+                    </div>
+                </div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1954</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>Nikita Khrushchev's<br>Speech</h4>
+                            <p>
+                                It all began on December 7, 1954 with a speech by Nikita Khrushchev 
+                                «On the widespread introduction of industrial methods, improving quality 
+                                and reducing construction costs», in which he harshly criticized the richly 
+                                decorated Stalinist architecture.
+                            </p>
+                        </div>
+                        <img src="./img/stages1.png" alt="">
+                        
+                    </div>
+                </div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1955</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>government <br>
+                                decree</h4>
+                            <p>
+                                On November 4, 1955, the decree «On the Elimination of Superfluous Design 
+                                and Construction» was issued. The new buildings were expected to be primarily 
+                                functional and practical. Decorative elements were forbidden in any form.
+                            </p>
+                        </div>
+                        <img src="./img/stages2.png" alt="">
+                    </div>
+                </div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1955 — 1968</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>Television Tower <br>
+                                in Ostankino</h4>
+                            <p>
+                                On July 15, 1955, the Council of Ministers of the USSR issued a decree «On the 
+                                construction of a new television broadcasting center». Construction began in the 
+                                summer of 1960, even before the final approval of the project. 
+                            </p>
+                        </div>
+                        <img src="./img/stages3.png" alt="">
+                    </div>
+                </div>
+                <div class="stages-slider-item">
+                    <p class="stages-slider-year">1970 — 1977</p>
+                    <div class="stages-slider-card">
+                        <div>
+                            <h4>Russian state news<br> agency (TASS)</h4>
+                            <p>
+                                The main peculiarity of the facades are the two-storey window screens, whose 
+                                unusual shape prevented the building from falling out of the square's ensemble, 
+                                giving the 9-storey building the appearance of a 4-storey structure.  
+                            </p>
+                        </div>
+                        <img src="./img/stage4.png" alt="">
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -142,20 +255,24 @@
         // functions
         function addAnimation(element, additionalOffset, animationClass) {
             document.addEventListener('scroll', () => {
+                if (animationClass === 'swiperight') console.log(window.scrollY, element.offsetTop - additionalOffset)
                 if (window.scrollY > element.offsetTop - additionalOffset) {
-                    element.classList.add(animationClass)
+                    element.classList.add(animationClass);
                 }
             })
         }
 
         // elements
         const styleHeader = document.querySelector('.style h2');
+        const stagesHeader = document.querySelector('.stages h2');
         const styleElements = document.querySelectorAll('.style-image');
         const styleTextList = document.querySelectorAll('.style-text-main');
 
 
         // handlers
         addAnimation(styleHeader, 400, 'swipeleft');
+        addAnimation(stagesHeader, 1000, 'swiperight');
+        
         styleElements.forEach((el) => {
             addAnimation(el, 500, 'opacityzeromax')
         })

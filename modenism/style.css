@@ -20,13 +20,17 @@
     font-family: 'NeueHaasDisplayRoman';
     src: url(./fonts/NeueHaasDisplayRoman.ttf);
 }
+@font-face {
+    font-family: 'NeueHaasDisplayXThin';
+    src: url(./fonts/NeueHaasDisplayXThin.ttf);
+}
 
 
 html {
     scroll-behavior: smooth;
 }
 
-.firstscreen-info, .style {
+.firstscreen-info, .style, .stages {
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -153,7 +157,6 @@ a, p {
 .style {
     padding-top: 120px;
     padding-bottom: 100px; 
-    /* у следующей секции должен быть верхни отступ 100 */
 }
 
 .style h2 {
@@ -224,6 +227,73 @@ a, p {
 
 }
 
+.stages {
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.stages h2 {
+    text-align: right;
+    margin-right: -500px;
+    transition-duration: 1s;
+}
+
+.stages-slider {
+    display: flex;
+    margin-top: 80px;
+    gap: 0 24px;
+    overflow: hidden;
+}
+
+.stages-slider-year {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+
+    color: rgba(153, 153, 153, 0.5);
+}
+
+.stages-slider-card {
+    padding: 24px;
+    background-color: #E4E4E4;
+    height: 614px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stages-slider-card h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    font-family: "NeueHaasDisplayMediu";
+}
+
+.stages-slider-card p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.stages-slider-card img {
+    height: 261px;
+    width: 312px;
+}
+
+
+
+
+
+/* animations */
+
 .swipetop {
     animation-name: swipetop;
     animation-duration: 2s;
@@ -238,10 +308,10 @@ a, p {
 }
 
 
-.swipeleft {
-    animation-name: swipeleft;
-    animation-duration: 1s;
-    display: block !important;
+.swiperight {
+    /* animation-name: swiperight; */
+    /* animation-duration: 2s; */
+    margin-right: 0 !important;
 }
 
 .swipebottom {
@@ -301,6 +371,19 @@ a, p {
         margin-left: 0px;
     }
 }
+
+@keyframes swiperight {
+    from {
+        margin-right: -500px;
+    }
+    75% {
+        margin-right: -500px;
+    }
+    to {
+        margin-right: 0px;
+    }
+}
+
 
 
 
