@@ -241,8 +241,10 @@ a, p {
 .stages-slider {
     display: flex;
     margin-top: 80px;
+    padding-bottom: 40px;
     gap: 0 24px;
     overflow: hidden;
+    position: relative;
 }
 
 .stages-slider-year {
@@ -286,6 +288,12 @@ a, p {
 .stages-slider-card img {
     height: 261px;
     width: 312px;
+}
+
+.stages-slider-item {
+    position: absolute;
+    top: 0;
+    transition: all 6s ease-out;
 }
 
 

@@ -252,15 +252,7 @@
     </section>
 
     <script>
-        // functions
-        function addAnimation(element, additionalOffset, animationClass) {
-            document.addEventListener('scroll', () => {
-                if (animationClass === 'swiperight') console.log(window.scrollY, element.offsetTop - additionalOffset)
-                if (window.scrollY > element.offsetTop - additionalOffset) {
-                    element.classList.add(animationClass);
-                }
-            })
-        }
+
 
         // elements
         const styleHeader = document.querySelector('.style h2');
@@ -268,17 +260,70 @@
         const styleElements = document.querySelectorAll('.style-image');
         const styleTextList = document.querySelectorAll('.style-text-main');
 
+        const stagesSlider = document.querySelector('.stages-slider');
+        const stagedSliderItems = document.querySelectorAll('.stages-slider-item');
+
+        // constants
+        const itemWidth = stagedSliderItems[0].offsetWidth;
+        const slideGap = 24;
+
+        // functions
+        function addAnimation(element, additionalOffset, animationClass) {
+            document.addEventListener('scroll', () => {
+                if (window.scrollY > element.offsetTop - additionalOffset) {
+                    element.classList.add(animationClass);
+                }
+            })
+        }
+
+        function startSlider() {
+            stagesSlider.style.height = stagedSliderItems[0].clientHeight + "px";
+            stagedSliderItems[0].style.left = 0;
+            stagedSliderItems[stagedSliderItems.length -1 ].style.left = -itemWidth - slideGap + 'px';
+            function changeStageSlide(el, maxLeft, slideWidth) {
+                const curentLeft = el.style.left.replace('px', '');
+                console.log(el.offsetWidth);
+                if (curentLeft <= maxLeft) {
+                    el.style.left = +curentLeft + 20 + 'px';
+                } else {
+                    el.style.left = (-slideWidth + 40) * 2 + 'px';
+                    el.style.display = 'none';
+                };
+                if (curentLeft > window.innerWidth && el.style.display !== 'none') {
+                    el.style.display = 'none';
+                };
+
+                if ((el.style.display === 'none') && (curentLeft > -slideWidth) && !(curentLeft > window.innerWidth)) {
+                    el.style.display = 'block';
+                };
+            };
+            stagedSliderItems.forEach((element, index) => {
+                if (index !== 0 && index !== stagedSliderItems.length - 1) {
+                    const prevLeft = stagedSliderItems[index-1].style.left.replace('px', '') || 0;
+                    const newLeft = +prevLeft + +itemWidth + slideGap;
+                    element.style.left = newLeft + 'px';
+                };
+                setInterval(() => {
+                    changeStageSlide(element, (stagedSliderItems.length - 2) * (slideGap + itemWidth), itemWidth + slideGap*2)
+                }, 2000)
+            });
+        };
 
         // handlers
+        startSlider();
         addAnimation(styleHeader, 400, 'swipeleft');
         addAnimation(stagesHeader, 1000, 'swiperight');
         
         styleElements.forEach((el) => {
             addAnimation(el, 500, 'opacityzeromax')
-        })
+        });
         styleTextList.forEach((el) => {
             addAnimation(el, 500, 'style-text-main_display')
-        })
+        });
+
+        // unrefactoring logic
+        
+
         
     </script>
 
